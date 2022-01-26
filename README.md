@@ -19,5 +19,5 @@ httpsListener, err := manager.Listen("tcp", "0.0.0.0:8443")
 if err != nil {
     panic(err)
 }
-log.Fatal(httpsServer.Serve(ctx, httpsListener))
+log.Fatal(httpServer.Serve(httpsListener))
 ```
